@@ -25,8 +25,8 @@ var simpleLogger = winston.createLogger({
     format: winston.format.simple(),
     transports: [new winston.transports.Console()],
 });
-function sayHello(name) {
+var sayHello = function (name) {
     simpleLogger.info("Hello " + name);
-}
+};
 sayHello('Mr Sharp');
 //# sourceMappingURL=index.js.map
